@@ -1,0 +1,22 @@
+{
+	"name" : "Dual JP36 Original Sight",
+	"description" : "Adds dual sight functionality for the ''JP36 Original Sight''. Compatible with the ''PiP Scopes'' mod.",
+	"author" : "DR01D_Qs"
+	"contact" : "https://discord.gg/aYGvrAdGcZ"
+	"version" : "1.0",
+	"blt_version" : 2,
+
+	"updates" : [
+		{
+			"identifier" : "NRI_Vintage",
+			"host" : {
+				"meta" : "https://raw.githubusercontent.com/DR01D-Qs/NRI_Vintage/refs/heads/main/meta.json",
+			}
+		}
+	],
+
+	"hooks" : [
+		{"hook_id":"lib/tweak_data/weaponfactorytweakdata","script_path":"lua/nri_vintage_weaponfactorytweakdata.lua" }
+		{"hook_id":"lib/units/weapons/newraycastweaponbase","script_path":"lua/nri_vintage_newraycastweaponbase.lua" }
+	]
+}
