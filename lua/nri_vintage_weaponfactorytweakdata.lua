@@ -18,7 +18,6 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "nri_vintage_WeaponFactoryTweakDa
 	self.parts.wpn_fps_ass_g36_o_vintage.override.wpn_fps_ass_g36_body_sl8.steelsight_visible = false
 	self.parts.wpn_fps_ass_g36_o_vintage.stance_mod.wpn_fps_ass_g36.translation = Vector3(-0.02, -3, -2.35+3.15)
 	self.parts.wpn_fps_ass_g36_o_vintage.stats.zoom = 6
-	self.parts.wpn_fps_ass_g36_o_vintage.camera = nil
 
 	self.parts.wpn_fps_ass_g36_body_standard_steelsight = {
 		steelsight_swap_progress_trigger = 0.85,
