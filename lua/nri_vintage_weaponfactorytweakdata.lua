@@ -14,8 +14,11 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "nri_vintage_WeaponFactoryTweakDa
 	self.parts.wpn_fps_ass_g36_o_vintage.adds = self.parts.wpn_fps_ass_g36_o_vintage.adds or {}
 	table.insert(self.parts.wpn_fps_ass_g36_o_vintage.adds, "wpn_fps_upg_o_vintage_reddot")
 	table.insert(self.parts.wpn_fps_ass_g36_o_vintage.adds, "wpn_fps_ass_g36_body_standard_steelsight")
+	self.parts.wpn_fps_ass_g36_o_vintage.override.wpn_fps_ass_g36_body_standard.steelsight_visible = false
+	self.parts.wpn_fps_ass_g36_o_vintage.override.wpn_fps_ass_g36_body_sl8.steelsight_visible = false
 	self.parts.wpn_fps_ass_g36_o_vintage.stance_mod.wpn_fps_ass_g36.translation = Vector3(-0.02, -3, -2.35+3.15)
 	self.parts.wpn_fps_ass_g36_o_vintage.stats.zoom = 6
+	self.parts.wpn_fps_ass_g36_o_vintage.camera = nil
 
 	self.parts.wpn_fps_ass_g36_body_standard_steelsight = {
 		steelsight_swap_progress_trigger = 0.85,
@@ -33,8 +36,6 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "nri_vintage_WeaponFactoryTweakDa
 		stats = { value = 1 },
 	}
 
-	self.parts.wpn_fps_ass_g36_body_standard.steelsight_visible = false
-	self.parts.wpn_fps_ass_g36_body_sl8.steelsight_visible = false
 	self.parts.wpn_fps_ass_g36_s_sl8.override = self.parts.wpn_fps_ass_g36_body_sl8.override or {}
 	self.parts.wpn_fps_ass_g36_s_sl8.override.wpn_fps_ass_g36_body_standard_steelsight = {
 		unit = "units/pd2_dlc_tng/weapons/wpn_fps_ass_g36_body_optics/wpn_fps_ass_g36_body_optics_sl8_cut",
